@@ -1,0 +1,8 @@
+<div #mainDiv>
+  <div class="row" *ngFor="let _ of [].constructor(6); let i = index" [id]="i">
+    <span *ngFor="let _ of [].constructor(6); let j = index" (mousedown)="onMouseDown(i , j)" (mouseup)="onMouseUp()"
+      (mousemove)="onMouseMove($event, i , j)" [id]="'innerSpan'+ i + j">
+
+    </span>
+  </div>
+</div>

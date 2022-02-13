@@ -1,0 +1,13 @@
+div {
+    height: 100px;
+    width: 100%;
+    span {
+        border: 1px solid black;
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+    }
+    .fill-span {
+        background: blue;
+    }
+}
